@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!--<link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">-->
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+
+<body class="home">
+
+    <div id="contact-popup" class="contact-modal" aria-hidden="true">
+    <a href="#" class="contact-backdrop" aria-label="Close contact form"></a>
+
+        <div class="contact-card" role="dialog" aria-modal="true" aria-labelledby="contact-title">
+            <a href="#" class="contact-close" aria-label="Close">✕</a>
+
+            <h2 id="contact-title" class="contact-title">Let’s get in touch</h2>
+
+            <form class="contact-form" action="#" method="post">
+            <label class="contact-label">
+                Name
+                <input class="contact-input" type="text" name="name" placeholder="Your name" required>
+            </label>
+
+            <label class="contact-label">
+                Email
+                <input class="contact-input" type="email" name="email" placeholder="you@example.com" required>
+            </label>
+
+            <label class="contact-label">
+                Message
+                <textarea class="contact-textarea" name="message" rows="5" placeholder="Write your message..." required></textarea>
+            </label>
+
+            <button class="contact-btn" type="submit">Send</button>
+            </form>
+
+        </div>
+    </div>
+
+
+    <section id="hero" class="hero">
+        <nav class="navbar hero-nav">
+            <ul class="navlist">
+            <li class="navitem"><a href="#about" class="navlink">About</a></li>
+            <li class="navitem"><a href="#skills" class="navlink">Skills</a></li>
+            <li class="navitem"><a href="#projects" class="navlink">Projects</a></li>
+            <li class="navitem"><a href="#blog" class="navlink">Blog</a></li>
+            <li class="navitem"><a href="#gallery" class="navlink">Gallery</a></li>
+            </ul>
+        </nav>
+
+        <div class="hero-right">
+            <h1 class="hero-title">
+                Fatma Hana,<br>
+                Computer Science Student at 
+                <a class="tag-link" href="https://pmf.unsa.ba/" target="_blank">PMF</a>
+            </h1>
+
+            <div class="hero-subnav">
+                <a href="https://www.linkedin.com/" target="_blank">LinkedIn</a>
+                <a href="https://mail.google.com/" target="_blank">Email</a>
+                <a href="https://www.instagram.com/" target="_blank">Instagram</a>
+                <a href="https://twitter.com/" target="_blank">Twitter</a>
+                <a href="#contact-popup">Let’s talk</a>
+            </div>
+
+        </div>
+
+    </section>
+
+    <input type="checkbox" id="menu-toggle" class="menu-toggle">
+
+    <label for="menu-toggle" class="menu-btn" aria-label="Open menu">☰</label>
+    <label for="menu-toggle" class="menu-backdrop" aria-hidden="true"></label>
+
+    <nav class="mobile-nav" aria-label="Mobile navigation">
+    <ul class="navlist">
+        <li class="navitem"><a href="#hero" class="navlink">Home</a></li>
+        <li class="navitem"><a href="#about" class="navlink">About</a></li>
+        <li class="navitem"><a href="#skills" class="navlink">Skills</a></li>
+        <li class="navitem"><a href="#projects" class="navlink">Projects</a></li>
+        <li class="navitem"><a href="#blog" class="navlink">Blog</a></li>
+        <li class="navitem"><a href="#gallery" class="navlink">Gallery</a></li>
+    </ul>
+    </nav>
+
+    <nav class="side-nav" aria-label="Section navigation">
+        <ul class="navlist">
+            <li class="navitem"><a href="#hero" class="navlink">Home</a></li>
+            <li class="navitem"><a href="#about" class="navlink">About</a></li>
+            <li class="navitem"><a href="#skills" class="navlink">Skills</a></li>
+            <li class="navitem"><a href="#projects" class="navlink">Projects</a></li>
+            <li class="navitem"><a href="#blog" class="navlink">Blog</a></li>
+            <li class="navitem"><a href="#gallery" class="navlink">Gallery</a></li>
+        </ul>
+    </nav>
+
+
+    <section id="about" class="about-section">
+        <div class="about-inner">
+            <div class="about-photo">
+            <img src="images/profile3.jpg" alt="Photo of me">
+            </div>
+
+            <div class="about-text">
+            <h2>About</h2>
+            <p>
+                Hi, I’m Fatma Hana, a Computer Science student with an international background, 
+                and I like creating things, especially projects that combine design and logic.
+            </p>
+            
+            </div>
+        </div>
+    </section>
+
+
+    <section id="skills" class="skills-section">
+        <h2 class="skills-title">Skills 🛠️</h2>
+
+        <div class="skills-wrap">
+            <input class="tab-radio" type="radio" name="skills-tab" id="tab-spoken" checked>
+            <input class="tab-radio" type="radio" name="skills-tab" id="tab-prog">
+            <input class="tab-radio" type="radio" name="skills-tab" id="tab-tools">
+
+            <div class="skills-tabs">
+            <label class="tab-pill" for="tab-spoken">Spoken</label>
+            <label class="tab-pill" for="tab-prog">Programming</label>
+            <label class="tab-pill" for="tab-tools">Tools</label>
+            </div>
+
+            <div class="tab-panels">
+            <div class="tab-panel panel-spoken">
+                <div class="skills-grid">
+                <div class="skill-card">IR Persian</div>
+                <div class="skill-card">🇧🇦 Bosnian</div>
+                <div class="skill-card">🇹🇷 Turkish</div>
+                <div class="skill-card">🇬🇧 English</div>
+                
+                
+                </div>
+            </div>
+
+            <div class="tab-panel panel-prog">
+                <div class="skills-grid">
+                <div class="skill-card">🌐 HTML</div>
+                <div class="skill-card">🎨 CSS</div>
+                <div class="skill-card">🟨 JavaScript</div>
+                <div class="skill-card">💻 C++</div>
+                <div class="skill-card">🐍 Python</div>
+                <div class="skill-card">☕ Java</div>
+
+                </div>
+            </div>
+
+            <div class="tab-panel panel-tools">
+                <div class="skills-grid">
+                <div class="skill-card">🧩 VS Code</div>
+                <div class="skill-card">🧱 Git</div>
+                <div class="skill-card">🧠 ChatGPT</div>
+                </div>
+            </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="projects" class="projects-section">
+        <h2 class="projects-title">Projects</h2>
+
+        <div class="projects-grid">
+            <article class="project-card">
+            <img class="project-img" src="images/tree.jpg" alt="Screenshot of Project 1">
+
+            <div class="project-body">
+                <h3 class="project-name">Self-balancing Binary Search Tree</h3>
+                <p class="project-desc">C++ AVL Tree: self-balancing BST with rotations to guarantee O(log n) operations.</p>
+
+                <div class="project-tags">
+                <span class="tag">C++</span>
+                </div>
+
+                <div class="project-links">
+                <a class="project-link" href="https://github.com/FatmaHana/Self-balancing-tree" target="_blank" rel="noopener">GitHub</a>
+                </div>
+            </div>
+            </article>
+
+            <article class="project-card">
+            <img class="project-img" src="images/hero.jpg" alt="Screenshot of Project 2">
+
+            <div class="project-body">
+                <h3 class="project-name">First Aid Assistant</h3>
+                <p class="project-desc">First Aid web app with an AI chat assistant for quick instructions and common emergency scenarios.</p>
+
+                <div class="project-tags">
+                <span class="tag">React</span>
+                <span class="tag">Python</span>
+                <span class="tag">AI Chat</span>
+                </div>
+
+                <div class="project-links">
+                <a class="project-link" href="https://github.com/esmaagic/heroj-dws" target="_blank" rel="noopener">GitHub</a>
+                </div>
+            </div>
+            </article>
+
+            <article class="project-card">
+            <img class="project-img" src="images/workplace.jpg" alt="Screenshot of Project 3">
+
+            <div class="project-body">
+                <h3 class="project-name">Work place</h3>
+                <p class="project-desc">Short description of what this project does.</p>
+
+                <div class="project-tags">
+                <span class="tag">Node</span>
+                <span class="tag">JavaScript</span>
+                </div>
+
+                <div class="project-links">
+                <a class="project-link" href="https://github.com/FatmaHana/WorkPlace" target="_blank" rel="noopener">GitHub</a>
+                </div>
+            </div>
+            </article>
+        </div>
+    </section>
+
+    <section id="blog" class="blog-section">
+        <h2 class="blog-title">Blog</h2>
+
+        <div class="blog-grid">
+            <article class="blog-card">
+                <h3 class="blog-post-title">The AI Bubble: Are We Repeating History</h3>
+                <p class="blog-meta">Dec 2025 • 3 min read</p>
+                <p class="blog-excerpt">Is AI hype outpacing reality, or are we just early in a real revolution. A balanced look at what a bubble means and what survives.</p>
+
+                <a class="readmore" href="#post-1">Read more</a>
+            </article>
+
+            <article class="blog-card">
+                <h3 class="blog-post-title">Passkeys vs Passwords</h3>
+                <p class="blog-meta">Dec 2025 • 3 min read</p>
+                <p class="blog-excerpt">Why passwords keep failing, what passkeys are, and why they are becoming the new default.</p>
+                <a class="readmore" href="#post-2">Read more</a>
+            </article>
+
+            <article class="blog-card">
+                <h3 class="blog-post-title">What Is Zero Trust Security</h3>
+                <p class="blog-meta">Dec 2025 • 3 min read</p>
+                <p class="blog-excerpt">A simple explanation of the “never trust, always verify” model and why it matters today.</p>
+                <a class="readmore" href="#post-3">Read more</a>
+            </article>
+
+        </div>
+    </section>
+
+    <div id="post-1" class="modal">
+        <a class="modal-backdrop" href="#blog" aria-label="Close"></a>
+        <div class="modal-content" role="dialog" aria-modal="true" aria-labelledby="post1-title">
+            <a class="modal-close" href="#blog" aria-label="Close">✕</a>
+
+            <h2 id="post-1-title">The AI Bubble: Are We Repeating History</h2>
+
+            <p>
+            AI is everywhere right now. New tools launch daily, companies add AI to every product name,
+            and investors pour money into anything that sounds like machine learning. That hype raises
+            a big question: are we in an AI bubble, and if yes, what happens when it pops?
+            </p>
+
+
+            <h3>What People Mean By “Bubble”</h3>
+            <p>
+            A bubble happens when expectations grow faster than reality. Funding, confidence, and hype rise
+            because everyone believes the future is guaranteed. Real progress exists at first, but once
+            the story becomes bigger than results, people start paying for dreams instead of value.
+            </p>
+
+
+            <h3>Why AI Feels Like A Bubble</h3>
+            <p>
+            The biggest reason is speed. AI products move fast, so the hype cycle moves even faster.
+            Many startups promise to replace entire jobs or automate full workflows. In practice, most tools
+            still need humans to verify, edit, and guide them. That gap between marketing and everyday use
+            creates “bubble energy”.
+            </p>
+            <p>
+            Another reason is cost. Training large models requires expensive compute, and running them at scale
+            also costs money. Some products grow quickly but struggle to become profitable, especially if usage
+            depends on funding more than revenue.
+            </p>
+
+
+            <h3>But AI Is Also Real</h3>
+            <p>
+            Not every hype wave is meaningless. The internet had a bubble too, and many early companies failed,
+            but the internet still changed the world. AI is similar: even if the market overheats, the technology
+            will not disappear. It is already useful for writing, summarizing, translation, tutoring, and coding help.
+            </p>
+
+
+            <h3>What A Pop Might Look Like</h3>
+            <p>
+            If a pop happens, investors become stricter, weaker startups shut down, and companies stop adding AI
+            everywhere just to sound modern. The loudest promises fade first. The quieter, useful products survive.
+            That kind of correction can be healthy because it forces focus on real value.
+            </p>
+
+
+            <h3>How To Avoid Getting Tricked By Hype</h3>
+            <p>
+            Ask what problem the AI solves and whether people would pay for it without the buzzword.
+            Strong products have a clear answer. Weak ones stay vague. The best AI is not magic—it’s a tool
+            that saves time and reduces boring tasks.
+            </p>
+
+
+            <h3>My Take</h3>
+            <p>
+            AI has bubble energy right now, but that does not mean AI is a scam. It means excitement is ahead of reality.
+            Some companies will fail and valuations will drop, but the real winners will be the ones building AI that is
+            reliable, affordable, and genuinely useful in everyday life.
+            </p>    
+        </div>
+        </div>
+
+        <div id="post-2" class="modal">
+            <a href="#blog" class="modal-backdrop" aria-label="Close"></a>
+
+            <div class="modal-content" role="dialog" aria-modal="true" aria-labelledby="post-2-title">
+                <a href="#blog" class="modal-close" aria-label="Close">✕</a>
+
+                <h2 id="post-2-title">Passkeys vs Passwords</h2>
+                <p>
+                Passwords are easy to guess, reuse, leak, and phish. Even strong passwords can be stolen if a website gets breached
+                or if you enter them into a fake login page. The problem is not only weak passwords, it is that passwords are
+                a shared secret that can be copied.
+                </p>
+                <h3>What is a passkey</h3>
+                <p>
+                A passkey is a modern login method based on public key cryptography. Your device keeps a private key that never
+                leaves the phone or computer. The website only gets a public key. When you log in, the site asks your device to
+                prove it owns the private key, usually after Face ID, fingerprint, or a device PIN.
+                </p>
+                <h3>Why passkeys reduce phishing</h3>
+                <p>
+                Passkeys are tied to the real website domain. If you land on a fake site, the passkey will not authenticate there
+                because the domain does not match. That removes the most common attack where users are tricked into typing a password.
+                </p>
+                <h3>What changes for users</h3>
+                <p>
+                You stop memorizing secrets. You unlock your device and you are in. The tradeoff is you must protect your device
+                and use good account recovery options. The direction is clear though: more apps and platforms are moving toward
+                passkeys because they improve security and also make login simpler.
+                </p>
+            </div>
+        </div>
+
+        <div id="post-3" class="modal">
+            <a href="#blog" class="modal-backdrop" aria-label="Close"></a>
+
+            <div class="modal-content" role="dialog" aria-modal="true" aria-labelledby="post-3-title">
+                <a href="#blog" class="modal-close" aria-label="Close">✕</a>
+
+                <h2 id="post-3-title">What Is Zero Trust Security</h2>
+                <p>
+                For years, security was built like a castle: strong walls at the perimeter, and once you are inside the network,
+                you are trusted. The problem is that modern attacks do not respect the perimeter. People work remotely, apps run
+                in the cloud, and one stolen credential can move an attacker deep inside a company.
+                </p>
+                <h3>The core idea</h3>
+                <p>
+                Zero Trust means “never trust, always verify”. Every request must prove who it is, what it is allowed to access,
+                and whether the context is safe. Being “inside the network” is not enough anymore.
+                </p>
+                <h3>What it looks like in practice</h3>
+                <p>
+                You see multi factor authentication, device checks, least privilege access, and micro segmentation. Instead of one
+                big internal network, systems are separated. If one account is compromised, the attacker cannot freely move to
+                everything else.
+                </p>
+                <h3>Why it matters</h3>
+                <p>
+                Zero Trust is not a single tool, it is a strategy. It reduces the damage of breaches by limiting access and forcing
+                verification at every step. In a world of phishing, leaked passwords, and cloud services, it is one of the most
+                important security ideas to understand.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <section id="gallery" class="gallery-section">
+        <h2 class="gallery-title">Gallery</h2>
+
+        <div class="gallery-grid">
+            <div class="gallery-card" href="images/photo1.jpg" data-place="Istanbul">
+            <img src="images/photo1.jpg" alt="Gallery photo 1">
+            </div>
+            <div class="gallery-card" href="images/photo2.jpg" data-place="Beyazit Mosque">
+            <img src="images/photo2.jpg" alt="Gallery photo 2">
+            </div>
+            <div class="gallery-card" href="images/photo7.jpg" data-place="Sarajevo">
+            <img src="images/photo7.jpg" alt="Gallery photo 7">
+            </div>
+            <div class="gallery-card" href="images/photo3.jpg" data-place="Istanbul University">
+            <img src="images/photo3.jpg" alt="Gallery photo 3">
+            </div>
+            <div class="gallery-card" href="images/photo6.jpg" data-place="Nishapur">
+            <img src="images/photo6.jpg" alt="Gallery photo 6">
+            </div>
+            <div class="gallery-card" href="images/photo8.jpg" data-place="Istanbul">
+            <img src="images/photo8.jpg" alt="Gallery photo 8">
+            </div>
+            <div class="gallery-card" href="images/photo4.jpg" data-place="Teheran">
+            <img src="images/photo4.jpg" alt="Gallery photo 4">
+            </div>
+            <div class="gallery-card" href="images/photo5.jpg" data-place="Si-o-se-pol Bridge">
+            <img src="images/photo5.jpg" alt="Gallery photo 5">
+            </div>
+            
+        </div>
+    </section>
+
+
+    <footer class="site-footer">
+        <p class="footer-text">© 2025 Fatma Hana Memisevic • All  rights reserved </p>
+    </footer>
+
+
+
+<script>
+  const hero = document.getElementById("hero");
+  const obs = new IntersectionObserver(([e]) => {
+    document.body.classList.toggle("in-hero", e.isIntersecting);
+  }, { threshold: 0.35 });
+  obs.observe(hero);
+
+  const toggle = document.getElementById("menu-toggle");
+  document.querySelectorAll(".mobile-nav a").forEach(a => {
+    a.addEventListener("click", () => { toggle.checked = false; });
+  });
+</script>
+
+
+</body>
+</html>
